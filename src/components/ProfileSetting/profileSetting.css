@@ -1,0 +1,86 @@
+.ProfileSetting{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FAFAFA;
+    height: calc(100vh - 56px);
+    align-items: center;
+}
+.profileHeader{
+    width: 95%;
+    margin-top: 30px;
+}
+.profileHeader h1{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.profileSettingTabsContainer {
+    margin-top: 15px;
+    display: flex;
+    position: relative;
+    width: 95%;
+    height: 100%;
+    font-family: "Noto Sans";
+   
+}
+/* -------------------Tabs------------------------ */
+.profileSettingTabs{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    height: 100%;
+}
+
+.profileSettingTabs .tabs {
+    padding: 10px 0px;
+    text-align: center;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+    font-size: 12.8px;
+    color: #5E5E62;
+    margin-bottom: 25px;
+    font-weight: 800;
+    background-color:  #FAFAFA;
+    display: flex;
+    align-items: center;
+}
+  .profileSettingTabs .tabs .profileIcon{
+    margin-right: 10px;
+}
+  
+ .profileSettingTabs .active-tabs{
+    color: black;
+    font-weight: 800;
+    border-bottom: 5px solid black;
+}
+
+.profileSettingTabs .active-tabs img{   
+    filter: saturate(100%)  brightness(0%);
+}
+
+/* --------------Tabs Content--------------------- */
+.ProfileTabContent{
+    width: 85%;
+    height: 100%;
+}
+.profileContent{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+  
+.active-profileContent {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* -------------------Company Profile---------------- */

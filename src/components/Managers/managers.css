@@ -1,0 +1,595 @@
+.managerDetails{
+    margin-left: 30px;
+    width: 850px;
+    max-height: 490px;
+    height: 95%;
+    overflow-y: auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+.managerDetails::-webkit-scrollbar{
+    width: 3px;
+    background-color: #f3f3f3;
+}
+.managerDetails-container{
+    width: 95%;
+    height: 100%;
+}
+
+.managerDetailsAndAddBtn{
+    display:flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-bottom: 1px solid #5e5e6225;
+    align-items: center;
+    margin-top: 10px;
+}
+.managerDetailsHeader h1{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.managerDetailsAddBtn{
+    width: 133px;
+    height: 40px;
+    background-color: #041342;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.managerDetailsAddBtn h2{
+    font-size: 12.7px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    color: white;;
+}
+.addmanagerImg{
+    margin-left: 6px;
+    display: flex;
+    align-items: center;
+}
+
+/* ----------------manager Filter Options------------------- */
+.managerFilter{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.managerFilter label{
+    font-size: 14px;
+    font-weight: 400;
+}
+.managerFilter input{
+    font-size: 14px;
+    border: 1px solid  #9FA2B4;
+    margin-top: 1px;
+}
+.managerSearchInp{
+    width: 212px;
+}
+.managerSearchInp input{
+    width: 212px;
+    height: 42px;
+    border-radius: 8px;
+    padding: 0px 5px 0px 35px;
+    background-image: url(../../../public/images/searchIcon.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 12px;
+}
+.managerStateInp{
+    width: 212px;
+}
+.managerStateInp input{
+    width: 212px;
+    height: 42px;
+    border-radius: 8px;
+    padding: 0px 5px 0px 20px;
+    background-image: url(../../../public/images/addbranchDropDown.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+}
+.managerCityInp{
+    width: 212px;
+}
+.managerCityInp input{
+    width: 212px;
+    height: 42px;
+    border-radius: 8px;
+    padding: 0px 5px 0px 20px;
+    background-image: url(../../../public/images/addbranchDropDown.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+}
+.managerStatusInp{
+   width: 94px;
+}
+.managerStatusInp input{
+    width: 94px;
+    height: 42px;
+    border-radius: 8px;
+    padding: 0px 5px 0px 15px;
+    background-image: url(../../../public/images/addbranchDropDown.svg);
+    background-repeat: no-repeat;
+    background-position: 85% 50%;
+}
+
+/* -------------------manager Accordian---------------------- */
+.managerAccordianContainer{
+    width: 100%;
+}
+.managerAccordianHeader{
+    width: 100%;
+    background-color: #DFE0EB;
+    height: 46px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+}
+.managerAccordianHeaderContainer{
+    width: 96%;
+    background-color: #DFE0EB;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.managerNameAndStatus{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.managerNameAndStatus .isAdminpara{
+    font-size: 13px;
+    font-weight: 400;
+}
+.managerNameAndStatus h2{
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.managerStatus{
+    width: 65px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 25px;
+    margin-left: 10px;
+}
+.managerStatus p{
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: 400 ;
+}
+/* ------------manager Action Tools--------------- */
+.managerActionTools{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+.managerDetailsDelete{
+    margin: 0px 45px;
+}
+
+
+
+/* --------------Accordian Content--------------- */
+.managerAccordianContent{
+    margin-top: 20px;
+    width: 100%;
+    height: 320px;
+    margin-left: 5px;
+    display:none;
+    flex-direction: column;
+}
+.active-managerAccordianContent{
+    display: flex;
+}
+
+/* -----------manager Head and Status Container----------------- */
+
+.managerHeadDetailsContainer{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+.managerHeadDetailsContainer h4{
+    font-size: 14px;
+    font-weight: 400;
+    color: #5E5E62;
+    margin-bottom: 5px;
+}
+.managerHeadDetailsContainer h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+.managerHeadContainer{
+    width: 30%;
+}
+.managerAdharAndStatus{
+    width: 35%;
+    height: 68px;
+}
+.managerAdharAndStatus label{
+    font-size: 13px;
+}
+
+/* ------------------Admin Check--------------------- */
+.isAdminCheck{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.isAdminHeader{
+    width: 30%;
+}
+.isAdminCheckBox{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+.isAdminCheckBox input{
+    width: 26px;
+    height: 26px;
+}
+.isAdminCheckBox p{
+    margin-bottom: 0;
+    margin-left: 5px;
+    font-size: 14px;
+}
+.yesCheckBox{
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+.noCheckBox{
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+/* -------------------Status Check------------------ */
+
+
+.isStatusCheck{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.isStatusHeader{
+   width:30%;
+  
+}
+.isStatusCheckBox{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+.isStatusCheckBox input{
+    width: 26px;
+    height: 26px;
+}
+.isStatusCheck p{
+    margin-bottom: 0;
+    margin-left: 5px;
+    font-size: 14px;
+   
+}
+
+.activeCheckBox{
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+.inactiveCheckBox{
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+
+
+
+
+/* ----------------Contact Details----------------- */
+.managerContactHeader{
+    margin-top: 10px;
+}
+.managerContactHeader h3{
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+
+.managerContactDetailsContainer{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+.managerContactDetailsContainer h4{
+    font-size: 14px;
+    font-weight: 400;
+    color: #5E5E62;
+    margin-bottom: 5px;
+}
+.managerContactDetailsContainer h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+.managerContactContainer{
+    width: 30%;
+}
+.managerContactEmailContainer{
+    width: 35%;
+}
+
+.adharisAdminDiv{
+    display: flex;
+   width: 80%;
+   justify-content: space-between;
+   margin-top: 10px;
+}
+.adharContainer{
+    width: 30%;
+}
+.documentViewDownload{
+    display: flex;
+}
+.downloadIcon{
+    margin-left: 20px;
+}
+.adharisAdminDiv h4{
+    font-size: 14px;
+    font-weight: 400;
+}
+.documentImage{
+    display: flex;
+    
+}
+.documentImg1{
+    width: 48px;
+    height: 48px;
+    background-color: #D9D9D9;
+    border-radius: 8px;
+}
+.documentImg2{
+    width: 48px;
+    height: 48px;
+    background-color: #D9D9D9;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+.adminCheckBoxContainer{
+    display: flex;
+}
+.adminCheckBoxContainer p{
+    margin-left: 5px;
+}
+.adminCheckBox1{
+    display: flex;
+   
+}
+.adminCheckBox2{
+    display: flex;
+    margin-left: 10px;
+   
+}
+.adminCheckBoxContainer input{
+    width: 26px;
+    height: 26px;
+}
+
+/* ---------------REset Passwowrd-------------- */
+.managerResetPassword h3{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #041342;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* ------------ADdd Manager------------- */
+
+.addmanagerContent{
+    margin-top: 10px;
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    margin-left: 10px;
+}
+.addmanagerContent label{
+    font-size: 14px;
+    font-weight: 400;
+    color: #5E5E62;
+}
+.addmanagerContent input{
+    outline: none;
+    /* height: 42px; */
+    border:  1px solid #9FA2B4;
+    border-radius: 8px;
+    padding: 0px 3px 0px 15px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.addmanagerDetailsContainer{
+    display: flex;
+    flex-direction: column;
+}
+.addmanagerName{
+    display: flex;
+    flex-direction: column;
+}
+.addmanagerName input{
+    width: 212px;
+    height: 42px;
+    border-radius: 8px;
+    border: 1px solid #9FA2B4; 
+}
+
+.addmanagerHeadRegionStatus{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.addmanagerHead{
+    width: 212px; 
+}
+
+.addmanagerHead input{
+    width: 100%;  
+    height: 42px;
+    background-image: url(../../../public/images/addbranchDropDown.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+}
+
+.addmanagerHead2{
+    width: 35%;
+}
+
+/* -----------Add manager Addresss--------------------- */
+.addmanagerAddressContainer{
+    margin-top: 10px;
+}
+
+.addHeadOfficePincode{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.addHeadOffice{
+    display: flex;
+    flex-direction: column;
+    width: 330px
+}
+.addmanagerPincode{
+    display: flex;
+    flex-direction: column;
+    width: 212px;
+}
+
+.addmanagerAddressLocation{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 10px;
+}
+.addmanagerAddressLocation .addmanagerLocation{
+    width: 212px;
+}
+.addmanagerLocation input{
+    width: 100%;
+}
+
+/* ---------------Contact Details----------------- */
+.addmanagerContactHeader h3{
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.addmanagerContactDetailsContainer{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.addmanagerContacts input{
+    height: 42px;
+}
+.addmanagerContacts{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.addmanagerContacts input{
+    width: 100%;
+}
+.addmanagerContacts2{
+    width: 35%;
+}
+.addmanagerContacts2 input{
+    height: 42px;
+}
+/* ----------------Save and Cancel Buttons--------------- */
+.addmanagerBtns{
+    margin-top: 20px;
+}
+.SaveBtn{
+    width:79px;
+    height: 42px;
+    background-color: #041342;
+    color: white;
+    outline: none;
+    border-radius: 4px;
+    font-weight: 800;
+    font-size: 13px;
+}
+
+.CancelBtn{
+    width:79px;
+    height: 42px;
+    background-color: white;
+    color: #041342;
+    border: 1px solid #041342;
+    outline: none;
+    border-radius: 4px;
+    margin-left: 15px;
+    font-weight: 800;
+    font-size: 13px;
+}
+
+
+.addmanagerDetalsForm{
+    display: flex;
+    flex-direction: column;
+}
+.managerDocumentsAndIsAdmin{
+    margin-top: 15px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.addManagerDocument input{
+    border: none;
+    padding-left: 2px;
+}   
+.addManagerDocument{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.addadminCheckBoxContainer{
+    display: flex;
+    margin-top: 5px;
+}
+.addadminCheckBoxContainer input{
+    width: 26px;
+    height: 26px;
+}
+.addadminCheckBoxContainer p{
+    margin-left: 5px;
+}
+.addadminCheckBox1{
+    display: flex;
+}
+.addadminCheckBox2{
+    display: flex;
+    margin-left: 10px;
+}

@@ -1,0 +1,457 @@
+.branchDetails{
+    margin-left: 30px;
+    width: 850px;
+    height: 490px;
+    max-height: 95%;
+    overflow-y: auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+.branchDetails::-webkit-scrollbar{
+    width: 3px;
+    background-color: #f3f3f3;
+}
+.branchDetails-container{
+    width: 95%;
+    height: 100%;
+}
+
+.branchDetailsAndAddBtn{
+    display:flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-bottom: 1px solid #5e5e6225;
+    align-items: center;
+    margin-top: 10px;
+}
+.branchDetailsHeader h1{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.branchDetailsAddBtn{
+    width: 133px;
+    height: 40px;
+    background-color: #041342;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+}
+.branchDetailsAddBtn h2{
+    font-size: 12.7px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    color: white;;
+}
+.addBranchImg{
+    margin-left: 6px;
+    display: flex;
+    align-items: center;
+}
+
+/* ----------------Branch Filter Options------------------- */
+.branchFilter{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.branchFilter label{
+    font-size: 14px;
+    font-weight: 400;
+}
+.branchFilter input{
+    font-size: 14px;
+    border: 1px solid  #9FA2B4;
+    margin-top: 1px;
+    outline: none;
+}
+.branchSearchInp{
+    width: 212px;
+}
+.branchSearchInp input{
+    width: 212px;
+    height: 42px;
+    border-radius: 8px;
+    padding: 0px 5px 0px 35px;
+    background-image: url(../../../public/images/searchIcon.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 12px;
+}
+.branchStateInp{
+    width: 212px;
+}
+.branchStateInp input{
+    width: 212px;
+    height: 42px;
+    border-radius: 8px;
+    padding: 0px 5px 0px 20px;
+    background-image: url(../../../public/images/addbranchDropDown.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+}
+.branchCityInp{
+    width: 212px;
+}
+.branchCityInp input{
+    width: 212px;
+    height: 42px;
+    border-radius: 8px;
+    padding: 0px 5px 0px 20px;
+    background-image: url(../../../public/images/addbranchDropDown.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+}
+.branchStatusInp{
+   width: 94px;
+}
+.branchStatusInp input{
+    width: 94px;
+    height: 42px;
+    border-radius: 8px;
+    padding: 0px 5px 0px 15px;
+    background-image: url(../../../public/images/addbranchDropDown.svg);
+    background-repeat: no-repeat;
+    background-position: 85% 50%;
+}
+
+/* -------------------Branch Accordian---------------------- */
+.branchAccordianContainer{
+    width: 100%;
+}
+.brachAccordianHeader{
+    width: 100%;
+    background-color: #DFE0EB;
+    height: 46px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+}
+.branchAccordianHeaderContainer{
+    width: 96%;
+    background-color: #DFE0EB;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.branchNameAndStatus{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.branchNameAndStatus h2{
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.branchStatus{
+    width: 65px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 25px;
+    margin-left: 10px;
+}
+.branchStatus p{
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: 400 ;
+}
+/* ------------Branch Action Tools--------------- */
+.branchActionTools{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+.branchDetailsDelete{
+    margin: 0px 45px;
+}
+
+
+
+/* --------------Accordian Content--------------- */
+.branchAccordianContent{
+    margin-top: 20px;
+    width: 100%;
+    height: 360px;
+    margin-left: 5px;
+    display:none;
+    flex-direction: column;
+}
+.active-branchAccordianContent{
+    display: flex;
+}
+
+/* -----------Branch Head and Status Container----------------- */
+
+.branchHeadDetailsContainer{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.branchHeadDetailsContainer h4{
+    font-size: 14px;
+    font-weight: 400;
+    color: #5E5E62;
+    margin-bottom: 5px;
+}
+.branchHeadDetailsContainer h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+.branchHeadContainer{
+    width: 30%;
+}
+
+
+.branchAddressHeader h3{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.branchOfficeAndPin{
+    display: flex;
+    width: 80%;
+  
+    justify-content: space-between;
+}
+
+.branchOfficeAndPin h4{
+    font-size: 14px;
+    font-weight: 400;
+    color: #5E5E62;
+    margin-bottom: 5px;
+}
+.branchOfficeAndPin p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.branchOffice{
+    width: 70%;
+}
+.OfficePin{
+    width: 30%; 
+}
+.OfficeLocation{
+    display: flex;
+    width: 80%;
+    height: 30px;
+    justify-content: space-between;
+}
+.OfficeLocation h4{
+    font-size: 14px;
+    font-weight: 400;
+    color: #5E5E62;
+    margin-bottom: 5px;
+}
+.OfficeLocation p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.OfficeLocation .city{
+    width: 30%;
+    height: 20px;
+}
+
+/* ----------------Contact Details----------------- */
+.branchContactHeader{
+    margin-top: 40px;
+}
+.branchContactHeader h3{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+
+.branchContactDetailsContainer{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.branchContactDetailsContainer h4{
+    font-size: 14px;
+    font-weight: 400;
+    color: #5E5E62;
+    margin-bottom: 5px;
+}
+.branchContactDetailsContainer h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+.branchContactContainer{
+    width: 30%;
+}
+
+/* ---------------REset Passwowrd-------------- */
+.branchResetPassword h3{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #041342;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* -----------------Add Branch ---------------------------- */
+.addBranchContent{
+    margin-top: 10px;
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    margin-left: 10px;
+}
+.addBranchContent label{
+    font-size: 14px;
+    font-weight: 400;
+    color: #5E5E62;
+}
+.addBranchContent input{
+    outline: none;
+    height: 42px;
+    border:  1px solid #9FA2B4;
+    border-radius: 8px;
+    padding: 0px 3px 0px 15px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.addbranchDetailsContainer{
+    display: flex;
+    flex-direction: column;
+}
+.addBranchName{
+    display: flex;
+    flex-direction: column;
+}
+.addBranchName input{
+    width: 212px;
+    height: 42px;
+    border-radius: 8px;
+    border: 1px solid #9FA2B4; 
+}
+
+.addBranchHeadRegionStatus{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.addBranchHead{
+    width: 212px; 
+}
+
+.addBranchHead input{
+    width: 100%;  
+}
+
+.addBranchHead .regionInp{
+    background-image: url(../../../public/images/addbranchDropDown.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+}
+
+/* -----------Add Branch Addresss--------------------- */
+.addBranchAddressContainer{
+    margin-top: 10px;
+}
+
+.addHeadOfficePincode{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.addHeadOffice{
+    display: flex;
+    flex-direction: column;
+    width: 330px
+}
+.addBranchPincode{
+    display: flex;
+    flex-direction: column;
+    width: 212px;
+}
+
+.addBranchAddressLocation{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 10px;
+}
+.addBranchAddressLocation .addBranchLocation{
+    width: 212px;
+}
+.addBranchLocation input{
+    width: 100%;
+}
+.addBranchLocation input{
+    background-image: url(../../../public/images/addbranchDropDown.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+}
+
+/* ---------------Contact Details----------------- */
+.addbranchContactHeader h3{
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.addBranchContactDetailsContainer{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.addBranchContacts{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.addBranchContacts input{
+    width: 100%;
+}
+
+
+/* ----------------Save and Cancel Buttons--------------- */
+.addBranchBtns{
+    margin-top: 20px;
+}
+.SaveBtn{
+    width:79px;
+    height: 42px;
+    background-color: #041342;
+    color: white;
+    outline: none;
+    border-radius: 4px;
+    font-weight: 800;
+    font-size: 13px;
+}
+
+.CancelBtn{
+    width:79px;
+    height: 42px;
+    background-color: white;
+    color: #041342;
+    border: 1px solid #041342;
+    outline: none;
+    border-radius: 4px;
+    margin-left: 15px;
+    font-weight: 800;
+    font-size: 13px;
+}
+
+
+.addBranchDetalsForm{
+    display: flex;
+    flex-direction: column;
+}

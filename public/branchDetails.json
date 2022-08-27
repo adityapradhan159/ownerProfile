@@ -1,0 +1,36 @@
+[
+    {
+        "id":0,
+        "branchName":"Branch 1",
+        "branchHead":"Rakesh Kumar",
+        "region":"North",
+        "branchStatus":"Active",
+        "headOfficeAddress":"Lorem ipsum hihfusf dhfjdfaj hajhjd 543",
+        "pincode":125016,
+        "city":"Mumbai",
+        "state":"Maharashtra",
+        "country":"India",
+        "primaryContact":987389274,
+        "secondaryContact":987389274,
+        "emailId":"ABC@gmail.com",
+        "onlineStatus":"Online",
+        "doucument":""
+    },
+    {
+        "id":1,
+        "branchName":"Branch 2",
+        "branchHead":"Mohit Kumar",
+        "region":"South",
+        "branchStatus":"Active",
+        "headOfficeAddress":"Lorem ipsum hihfusf dhfjdfaj hajhjd 543",
+        "pincode":165516,
+        "city":"Pune",
+        "state":"Maharashtra",
+        "country":"India",
+        "primaryContact":987389274,
+        "secondaryContact":987389274,
+        "emailId":"ABC@gmail.com",
+        "onlineStatus":"Offline",
+        "doucument":""
+    }
+]

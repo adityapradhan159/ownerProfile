@@ -1,0 +1,29 @@
+[
+    {
+        "id":0,
+        "managerName":"Rakesh Kumar",
+        "branchName":"Branch 1",
+        "region":"North",
+        "branchStatus":false,
+        "primaryContact":987389274,
+        "secondaryContact":987389274,
+        "emailId":"ABC@gmail.com",
+        "adharProof":474520187932,
+        "onlineStatus":"Online",
+        "isAdmin":false
+        
+    },
+    {
+        "id":1,
+        "managerName":"Mohit Kumar",
+        "branchName":"Branch 2",
+        "region":"South",
+        "branchStatus":true,
+        "primaryContact":987389274,
+        "secondaryContact":987389274,
+        "emailId":"ABC@gmail.com",
+        "adharProof":474520187932,
+        "onlineStatus":"Offline",
+        "isAdmin":true
+    }
+]

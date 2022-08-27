@@ -1,0 +1,234 @@
+.companyProfile{
+    margin-left: 30px;
+    width: 850px;
+    height: 98%;
+    overflow-y: scroll;
+    background-color: white;
+    display: flex;
+   
+    align-items: center;
+   flex-direction: column;
+}
+.companyProfile::-webkit-scrollbar{
+    width: 2px;
+    background-color: #D9D9D9;
+}
+.companyProfile-container{
+    width: 95%;
+    height: auto;
+}
+
+.companyProfileHeaderAndEdit{
+    display:flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    border-bottom: 1px solid #5e5e6225;
+    align-items: center;
+}
+.companyProfileHeader h1{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.companyProfileEditBtn h2{
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    color: #041342;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* ----------------Company Image and Company Name------------------ */
+.companyImgAndName{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.companyImg{
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    position: relative;
+}
+.companyImgEdit{
+    position: absolute;
+    top: 40%;
+    left: 90%;
+    transform: translate(-50%,50%);
+}
+
+.companyProfileName h3{
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
+/* --------------Company Address ------------- */
+.companyAddress-container{
+    margin-top: 30px;
+    flex-direction: column;
+}
+.companyAddressHeader h3{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.companyOfficeAndPin{
+    display: flex;
+    width: 80%;
+  
+    justify-content: space-between;
+}
+
+.companyOfficeAndPin h4{
+    font-size: 14px;
+    font-weight: 400;
+    color: #5E5E62;
+    margin-bottom: 5px;
+}
+.companyOfficeAndPin p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.companyOffice{
+    width: 70%;
+}
+.OfficePin{
+    width: 30%;
+    
+}
+.OfficeLocation{
+    display: flex;
+    width: 80%;
+    height: 30px;
+    justify-content: space-between;
+}
+.OfficeLocation h4{
+    font-size: 14px;
+    font-weight: 400;
+    color: #5E5E62;
+    margin-bottom: 5px;
+}
+.OfficeLocation p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.OfficeLocation .city{
+    width: 30%;
+    height: 20px;
+}
+
+/* ----------------Contact Details----------------- */
+.companyContact-container{
+    flex-direction: column;
+}
+.companyContactHeader h3{
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+
+.companyContactDetailsContainer{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.companyContactDetailsContainer h4{
+    font-size: 14px;
+    font-weight: 400;
+    color: #5E5E62;
+    margin-bottom: 5px;
+}
+.companyContactDetailsContainer h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+.companyContactContainer{
+    width: 30%;
+}
+
+/* ---------------REset Passwowrd-------------- */
+.companyResetPassword h3{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #041342;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* --------------------Edit Company Details---------------------- */
+
+.addcompanyAddressContainer{
+    width: 95%;
+    margin-top: 15px;
+    
+}
+
+.addcompanyAddressContainer label{
+    font-size: 13px;
+}
+
+.addCompanyAddressHeader h3{
+    font-size: 16px;
+    font-weight: 700;
+}
+.addHeadOfficePincode{
+    display: flex;
+    align-items: center;
+    
+}
+.addHeadOfficePincode input{
+    height: 42px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #9FA2B4;
+    padding: 0px 3px 0px 20px;
+}
+.addCompanyHeadOffice{
+    display: flex;
+    flex-direction: column;
+
+}
+.addCompanyHeadOffice input{
+    width: 330px;
+}
+.addCompanyPincode{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.addCompanyPincode input{
+    width: 212px;
+}
+
+
+.addCompanyAddressLocation{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 10px;
+}
+.addCompanyAddressLocation input{
+    height: 42px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #9FA2B4;
+    padding: 0px 3px 0px 20px;
+    width: 212px;
+}
+.addCompanyLocation{
+    width: 212px;
+}
+
+.addCompanyLocation input{
+    background-image: url(../../../public/images/addbranchDropDown.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+}
