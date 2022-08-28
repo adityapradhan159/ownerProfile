@@ -72,7 +72,10 @@ const handleEditYourData = () => {
         <div className="yourImg">
 
             <div className="yourImgEdit">
-                <img src="./images/Edit.svg" alt="" />
+            {
+                showYourDetails ? ""
+                : <img src="./images/Edit.svg" alt="" /> 
+            }
             </div>
             
         </div>

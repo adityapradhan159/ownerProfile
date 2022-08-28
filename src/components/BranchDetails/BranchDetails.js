@@ -1,32 +1,24 @@
 import React,{useState,useEffect} from 'react'
 import "./branchDetails.css"
+import BranchDetailsAccordian from './BranchDetailsAccordian/BranchDetailsAccordian'
 
 const BranchDetails = () => {
-
-
 
   // Button Disabled
   const [isBtnDisabled,setISBtnDisabled] = useState(false)
 
-  const [showAccordianContent,setShowAccordianContent] = useState(0)
 
-  const toggleTab = (index) => {
-    setShowAccordianContent(index);
-    console.log(index)
-  };
+  // show Add Branch Form
 
+  const [showAddBranchForm,setShowAddBranchForm] = useState(false)
 
-    // show Add Branch Form
+  const handleShowAddBranchForm = () => {
+    setShowAddBranchForm(!showAddBranchForm)
+    setISBtnDisabled(true)
 
-    const [showAddBranchForm,setShowAddBranchForm] = useState(false)
-
-    const handleShowAddBranchForm = () => {
-      setShowAddBranchForm(!showAddBranchForm)
-      setISBtnDisabled(true)
-
-      const branchDetailsAddBtn = document.getElementById("branchDetailsAddBtn");
-      branchDetailsAddBtn.style.backgroundColor="#9C9C9E"
-    }
+    const branchDetailsAddBtn = document.getElementById("branchDetailsAddBtn");
+    branchDetailsAddBtn.style.backgroundColor="#9C9C9E"
+  }
 
 
 // State to store data from json
@@ -54,79 +46,41 @@ useEffect(()=>{
 },[])
 
 const [addingBranchName,setAddingBranchName] = useState("")
-const handleAddBranchName =(e) => {
-  const addingBranch = e.target.value;
-  setAddingBranchName(addingBranch)
-}
+
 
 const [addingBranchHead,setAddingBranchHead] = useState("")
-const handleAddBranchHead =(e) => {
-  const branchHead = e.target.value;
-  setAddingBranchHead(branchHead)
-}
+
 
 const [addingBranchRegion,setAddingBranchRegion] = useState("")
-const handleAddBranchRegion =(e) => {
-  const region = e.target.value
-  setAddingBranchRegion(region)
-}
-
-const [addingBranchStatus,setAddingBranchStatus] = useState("")
-const handleAddBranchStatus =(e) => {
-  const branchStatus = e.target.value
-  setAddingBranchStatus(branchStatus)
-}
 
 
 const [addingBranchOffice,setAddingBranchOffice] = useState("")
-const handleAddBranchOffice =(e) => {
-  const headOfficeAddress = e.target.value
-  setAddingBranchOffice(headOfficeAddress)
-}
+
 
 const [addingBranchPincode,setAddingBranchPincode] = useState("")
-const handleAddBranchPincode =(e) => {
-  const pincode = e.target.value
-  setAddingBranchPincode(pincode)
-}
+
 
 const [addingBranchCity,setAddingBranchCity] = useState("")
-const handleAddBranchCity =(e) => {
-  const city = e.target.value
-  setAddingBranchCity(city)
-}
+
 
 const [addingBranchState,setAddingBranchState] = useState("")
-const handleAddBranchState =(e) => {
-  const state = e.target.value
-  setAddingBranchState(state)
-}
+
 
 const [addingBranchCountry,setAddingBranchCountry] = useState("")
-const handleAddBranchCountry =(e) => {
-  const country = e.target.value
-  setAddingBranchCountry(country)
-}
+
 
 const [addingBranchPContact,setAddingBranchPContact] = useState("")
-const handleAddBranchPrimContact =(e) => {
-  const pContact = e.target.value
-  setAddingBranchPContact(pContact)
-}
 
 
 const [addingBranchSContact,setAddingBranchSContact] = useState("")
-const handleAddBranchSecondContact =(e) => {
-  const sContact = e.target.value
-  setAddingBranchSContact(sContact)
-}
+
 
 const [addingBranchEmail,setAddingBranchEmail] = useState("")
-const handleAddBranchEmail =(e) => {
-  const email = e.target.value
-  setAddingBranchEmail(email)
-}
 
+
+
+const[isStatusActive,setStatusActive] = useState("")
+const [checked,setChecked] = useState(true)
 
 const handleBranchDetailsSave = (e) => {
   setISBtnDisabled(false)
@@ -134,11 +88,18 @@ const handleBranchDetailsSave = (e) => {
   const branchDetailsAddBtn = document.getElementById("branchDetailsAddBtn");
   branchDetailsAddBtn.style.backgroundColor="#041342"
 
+  if(isStatusActive == checked){
+    setStatusActive(true)
+  }
+  else{
+    setStatusActive(false)
+  }
+
   const newBranchObject = {
     "branchName":addingBranchName,
     "branchHead":addingBranchHead,
     "region":addingBranchRegion,
-    "branchStatus":addingBranchStatus,
+    "branchStatus":isStatusActive,
     "headOfficeAddress":addingBranchOffice,
     "pincode":addingBranchPincode,
     "city":addingBranchCity,
@@ -240,24 +201,36 @@ const [showAccordian,setshowAccordian] = useState(true)
               {/* ------Add Branch Name---------- */}
                 <div className="addBranchName">
                   <label htmlFor="">Branch Name<span style={{color:"red"}}>*</span></label>
-                  <input type="text" placeholder='Name' onChange={e=>handleAddBranchName(e)}/>
+                  <input type="text" placeholder='Name' onChange={e=>setAddingBranchName(e.target.value)}/>
                 </div>
 
               {/* -------------Branch Head Region and Status----------- */}
                 <div className="addBranchHeadRegionStatus">
                   <div className="addBranchHead">
                     <label htmlFor="">Branch Head<span style={{color:"red"}}>*</span></label>
-                    <input type="text" placeholder='Name' onChange={e=>handleAddBranchHead(e)}/>
+                    <input type="text" placeholder='Name' onChange={e=>setAddingBranchHead(e.target.value)}/>
                   </div>
 
                   <div className="addBranchHead">
                     <label htmlFor="">Region<span style={{color:"red"}}>*</span></label>
-                    <input className='regionInp' type="text" placeholder='Region' onChange={e=>handleAddBranchRegion(e)}/>
+                    <input className='regionInp' type="text" placeholder='Region' onChange={e=>setAddingBranchRegion(e.target.value)}/>
                   </div>
 
-                  <div className="addBranchHead">
-                    {/* <label htmlFor="">Status<span style={{color:"red"}}>*</span></label>
-                    <input type="text" placeholder='Status' onChange={e=>handleAddBranchStatus(e)}/> */}
+                  <div className="addBranchHeadStatus">
+                  <div className="isBranchStatusCheckBox">
+                    <div className="isBranchStatusHeader">
+                      <label htmlFor="">Status<span style={{color:"red"}}>*</span></label>
+                    </div>
+                        <div className="BranchactiveCheckBox">
+                          <input type="checkbox" onChange={(e) => setStatusActive(e.target.checked)}/>
+                          <p>Active</p>
+                        </div>
+
+                        <div className="BranchinactiveCheckBox">
+                          <input type="checkbox"/>
+                          <p>Inactive</p>
+                        </div>
+                      </div>
                   </div>
                 </div>
               </div>
@@ -272,29 +245,29 @@ const [showAccordian,setshowAccordian] = useState(true)
                 <div className="addHeadOfficePincode">
                   <div className="addHeadOffice">
                     <label htmlFor="">Head Office Address<span style={{color:"red"}}>*</span></label>
-                    <input type="text" placeholder='Name' onChange={e=>handleAddBranchOffice(e)}/>
+                    <input type="text" placeholder='Name' onChange={e=>setAddingBranchOffice(e.target.value)}/>
                   </div>
 
                   <div className="addBranchPincode">
                   <label htmlFor="">Pincode<span style={{color:"red"}}>*</span></label>
-                    <input type="text" placeholder='Name' onChange={e=>handleAddBranchPincode(e)}/>
+                    <input type="text" placeholder='Name' onChange={e=>setAddingBranchPincode(e.target.value)}/>
                   </div>
                 </div>
 
                 <div className="addBranchAddressLocation">
                   <div className="addBranchLocation">
                     <label htmlFor="">City<span style={{color:"red"}}>*</span></label>
-                    <input type="text" placeholder='City' onChange={e=>handleAddBranchCity(e)}/>
+                    <input type="text" placeholder='City' onChange={e=>setAddingBranchCity(e.target.value)}/>
                   </div>
 
                   <div className="addBranchLocation">
                     <label htmlFor="">State<span style={{color:"red"}}>*</span></label>
-                    <input type="text" placeholder='State' onChange={e=>handleAddBranchState(e)}/>
+                    <input type="text" placeholder='State' onChange={e=>setAddingBranchState(e.target.value)}/>
                   </div>
 
                   <div className="addBranchLocation">
                     <label htmlFor="">Country<span style={{color:"red"}}>*</span></label>
-                    <input type="text" placeholder='Country' onChange={e=>handleAddBranchCountry(e)}/>
+                    <input type="text" placeholder='Country' onChange={e=>setAddingBranchCountry(e.target.value)}/>
                   </div>
                 </div>
 
@@ -308,17 +281,17 @@ const [showAccordian,setshowAccordian] = useState(true)
                   <div className="addBranchContactDetailsContainer">
                   <div className="addBranchContacts">
                     <label htmlFor="">Primary Contact Details<span style={{color:"red"}}>*</span></label>
-                    <input type="text" placeholder='Number' onChange={e=>handleAddBranchPrimContact(e)}/>
+                    <input type="text" placeholder='Number' onChange={e=>setAddingBranchPContact(e.target.value)}/>
                   </div>
 
                   <div className="addBranchContacts">
                     <label htmlFor="">Secondary Contact Details<span style={{color:"red"}}>*</span></label>
-                    <input type="text" placeholder='Number' onChange={e=>handleAddBranchSecondContact(e)}/>
+                    <input type="text" placeholder='Number' onChange={e=>setAddingBranchSContact(e.target.value)}/>
                   </div>
 
                   <div className="addBranchContacts">
                     <label htmlFor="">Email Address<span style={{color:"red"}}>*</span></label>
-                    <input type="text" placeholder='Email' onChange={e=>handleAddBranchEmail(e)}/>
+                    <input type="text" placeholder='Email' onChange={e=>setAddingBranchEmail(e.target.value)}/>
                   </div>
                 </div>
                 </div>
@@ -343,11 +316,11 @@ const [showAccordian,setshowAccordian] = useState(true)
         {
           branchData.map((item,i) => (
             <>
-
-          <div key={i} className={showAccordianContent === (item.id) ? "brachAccordianHeader active-tabs" : "brachAccordianHeader"} onClick={() => toggleTab(item.id)}>
+            <BranchDetailsAccordian item={item} checked={checked} key={item.id}/>
+          {/* <div className={showAccordianContent === (item.id) ? "brachAccordianHeader active-tabs" : "brachAccordianHeader"} onClick={() => toggleTab(item.id)}>
 
             <div className="branchAccordianHeaderContainer">
-            {/* ----------Branch Name and Status----------- */}
+            {/* ----------Branch Name and Status----------- 
             <div className="branchNameAndStatus">
                 <h2>{item.branchName}</h2>
                 <div className="branchStatus" style={item.onlineStatus == "Online" ? {backgroundColor:"#218D1F"} : {backgroundColor:"#BB0606"} }>
@@ -355,7 +328,7 @@ const [showAccordian,setshowAccordian] = useState(true)
                 </div>
             </div>
 
-            {/* ------------Branch Action Tools------------- */}
+            {/* ------------Branch Action Tools-------------
             <div className="branchActionTools">
               <div className="branchDetailsEdit">
                 <img src="./images/branchEdit.svg" alt="" />
@@ -372,10 +345,10 @@ const [showAccordian,setshowAccordian] = useState(true)
             </div>
 
             </div>
-            {/* -------------------Branch Accordian Content------------------ */}
+            {/* -------------------Branch Accordian Content------------------ *
             <div className={showAccordianContent === (item.id) ? "branchAccordianContent  active-branchAccordianContent" : "branchAccordianContent"} >
 
-            {/* ---------------Branch Head And Status----------------- */}  
+            {/* ---------------Branch Head And Status----------------- *
             <div className="branchHead-container">
 
 
@@ -392,8 +365,20 @@ const [showAccordian,setshowAccordian] = useState(true)
                 </div>
 
                 <div className="branchHeadContainer">
-                    {/* <h4>Status</h4>
-                    <p style={{color:"#44BBA5"}}>{item.branchStatus}</p> */}
+                <div className="isBranchStatusCheckBox">
+                    <div className="isBranchStatusHeader">
+                      <label htmlFor="">Status<span style={{color:"red"}}>*</span></label>
+                    </div>
+                        <div className="BranchactiveCheckBox">
+                          <input type="checkbox" disabled={true}  defaultChecked={item.branchStatus == true ? checked : ""}/>
+                          <p>Active</p>
+                        </div>
+
+                        <div className="BranchinactiveCheckBox">
+                          <input type="checkbox" disabled={true}  defaultChecked={item.branchStatus == false ? checked : ""}/>
+                          <p>Inactive</p>
+                        </div>
+                      </div>
                 </div>
 
             </div>
@@ -433,7 +418,7 @@ const [showAccordian,setshowAccordian] = useState(true)
             </div>
             </div>
 
-            {/* ---------------Branch Contact Details----------------- */}
+            {/* ---------------Branch Contact Details----------------- 
 
             <div className="branchContact-container">
             <div className="branchContactHeader">
@@ -461,7 +446,7 @@ const [showAccordian,setshowAccordian] = useState(true)
             </div>
 
 
-            {/* ---------------Reset Password Link------------------- */}
+            {/* ---------------Reset Password Link------------------- 
             <div className="branchResetPassword">
             <h3>Reset Password</h3>
             </div>
@@ -469,7 +454,8 @@ const [showAccordian,setshowAccordian] = useState(true)
             </div>
             </div>
 
-            </>
+            */}
+          </> 
           ))
         }
 

@@ -83,7 +83,11 @@ setEditCompanyDetails(false)
         <div className="companyImg">
 
             <div className="companyImgEdit">
-                <img src="./images/Edit.svg" alt="" />
+              {
+                showCompanyDetails ? ""
+                : <img src="./images/Edit.svg" alt="" /> 
+              }
+              
             </div>
             
         </div>

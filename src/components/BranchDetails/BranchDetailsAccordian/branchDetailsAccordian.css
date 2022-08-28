@@ -1,0 +1,182 @@
+.brachAccordianHeader{
+    width: 100%;
+    background-color: #DFE0EB;
+    height: 46px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+}
+.branchAccordianHeaderContainer{
+    width: 96%;
+    background-color: #DFE0EB;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.branchNameAndStatus{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.branchNameAndStatus h2{
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.branchStatus{
+    width: 65px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 25px;
+    margin-left: 10px;
+}
+.branchStatus p{
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: 400 ;
+}
+/* ------------Branch Action Tools--------------- */
+.branchActionTools{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+.branchDetailsDelete{
+    margin: 0px 45px;
+}
+
+
+
+/* --------------Accordian Content--------------- */
+.branchAccordianContent{
+    margin-top: 20px;
+    width: 100%;
+    height: 360px;
+    margin-left: 5px;
+    display:flex;
+    flex-direction: column;
+}
+.active-branchAccordianContent{
+    display: flex;
+}
+
+/* -----------Branch Head and Status Container----------------- */
+
+.branchHeadDetailsContainer{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.branchHeadDetailsContainer h4{
+    font-size: 14px;
+    font-weight: 400;
+    color: #5E5E62;
+    margin-bottom: 5px;
+}
+.branchHeadDetailsContainer h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+.branchHeadContainer{
+    width: 30%;
+}
+.branchHeadContainer label{
+    font-size: 13px;
+    color: #5E5E62;
+}
+
+.branchAddressHeader h3{
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.branchOfficeAndPin{
+    display: flex;
+    width: 80%;
+  
+    justify-content: space-between;
+}
+
+.branchOfficeAndPin h4{
+    font-size: 14px;
+    font-weight: 400;
+    color: #5E5E62;
+    margin-bottom: 5px;
+}
+.branchOfficeAndPin p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.branchOffice{
+    width: 70%;
+}
+.OfficePin{
+    width: 30%; 
+}
+.OfficeLocation{
+    display: flex;
+    width: 80%;
+    height: 30px;
+    justify-content: space-between;
+}
+.OfficeLocation h4{
+    font-size: 14px;
+    font-weight: 400;
+    color: #5E5E62;
+    margin-bottom: 5px;
+}
+.OfficeLocation p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.OfficeLocation .city{
+    width: 30%;
+    height: 20px;
+}
+
+/* ----------------Contact Details----------------- */
+.branchContactHeader{
+    margin-top: 40px;
+}
+.branchContactHeader h3{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+
+.branchContactDetailsContainer{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.branchContactDetailsContainer h4{
+    font-size: 14px;
+    font-weight: 400;
+    color: #5E5E62;
+    margin-bottom: 5px;
+}
+.branchContactDetailsContainer h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+.branchContactContainer{
+    width: 30%;
+}
+
+/* ---------------REset Passwowrd-------------- */
+.branchResetPassword h3{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #041342;
+    text-decoration: underline;
+    cursor: pointer;
+}

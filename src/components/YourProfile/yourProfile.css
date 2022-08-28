@@ -1,10 +1,9 @@
 .yourProfile{
     margin-left: 30px;
     width: 850px;
-    height: 95%;
+    height: calc(100vh - 150px);
     background-color: white;
     display: flex;
- 
     flex-direction: column;
     align-items: center;
 }

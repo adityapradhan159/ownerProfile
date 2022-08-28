@@ -1,13 +1,12 @@
 .companyProfile{
     margin-left: 30px;
     width: 850px;
-    height: 98%;
+    height: calc(100vh - 150px);
     overflow-y: scroll;
     background-color: white;
     display: flex;
-   
     align-items: center;
-   flex-direction: column;
+    flex-direction: column;
 }
 .companyProfile::-webkit-scrollbar{
     width: 2px;
@@ -168,7 +167,7 @@
 .addcompanyAddressContainer{
     width: 95%;
     margin-top: 15px;
-    
+    padding-bottom: 20px;
 }
 
 .addcompanyAddressContainer label{
