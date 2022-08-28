@@ -54,6 +54,11 @@ const handleEditYourData = () => {
     setEditYourDetails(false)
 }
 
+const handleEditCancelYourData = () => {
+    setShowYourDetails(true);
+    setEditYourDetails(false)
+}
+
 
   return (
     <div className='yourProfile'>
@@ -158,7 +163,7 @@ const handleEditYourData = () => {
 
         <div className="addyourBtns">
         <button className='SaveBtn' onClick={() => handleEditYourData()}>Save</button>
-        <button className='CancelBtn' >Cancel</button>
+        <button className='CancelBtn' onClick={() => handleEditCancelYourData()}>Cancel</button>
         </div>
 
 </div>

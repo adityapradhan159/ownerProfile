@@ -59,6 +59,7 @@
  .profileSettingTabs .active-tabs{
     color: black;
     font-weight: 800;
+    padding-bottom: 8px;
     border-bottom: 5px solid black;
 }
 

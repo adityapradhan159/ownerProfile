@@ -65,6 +65,10 @@ setShowCompanyDetails(true);
 setEditCompanyDetails(false)
 }
 
+const handleCancelCompData = () => {
+  setShowCompanyDetails(true);
+  setEditCompanyDetails(false)
+}
 
   return (
     <div className="companyProfile">
@@ -244,7 +248,7 @@ setEditCompanyDetails(false)
 
               <div className="addBranchBtns">
                 <button className='SaveBtn' onClick={() => handleSaveCompData()}>Save</button>
-                <button className='CancelBtn' >Cancel</button>
+                <button className='CancelBtn' onClick={() => handleCancelCompData()}>Cancel</button>
               </div>
 
               </div>  
