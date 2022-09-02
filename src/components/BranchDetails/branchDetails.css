@@ -226,10 +226,18 @@
 }
 .addBranchHead{
     width: 212px;   
+    position: relative;
+}
+.regionOptions{
+    width: 212px;
+    height: 100px;
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .addBranchHeadStatus{
     width: 30%;
-   
 }
 
 .addBranchHead input{

@@ -216,6 +216,11 @@
     width: 100%;
 }
 
+.uploadButton{
+    margin-top: 8px;
+    cursor: pointer;
+}
+
 /* ---------------Contact Details----------------- */
 .addmanagerContactHeader h3{
     font-size: 16px;

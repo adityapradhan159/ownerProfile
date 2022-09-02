@@ -48,23 +48,34 @@
     width: 76px;
     height: 76px;
     border-radius: 50%;
-    background-color: #D9D9D9;
+    background-color: white;
+    border: 2px solid #BFBFBF;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .companyImgEdit{
     position: absolute;
     top: 40%;
     left: 90%;
     transform: translate(-50%,50%);
 }
-
+.companyProfileName{
+    margin-left: 20px;
+}
 .companyProfileName h3{
     font-size: 16px;
     font-weight: 700;
-    margin-left: 20px;
     margin-bottom: 0px;
 }
-
+.companyProfileName p{
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 6px;
+    color: #041342;
+}
 /* --------------Company Address ------------- */
 .companyAddress-container{
     margin-top: 30px;
@@ -79,7 +90,6 @@
 .companyOfficeAndPin{
     display: flex;
     width: 80%;
-  
     justify-content: space-between;
 }
 

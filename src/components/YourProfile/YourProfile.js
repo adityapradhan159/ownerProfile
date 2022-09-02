@@ -75,18 +75,22 @@ const handleEditCancelYourData = () => {
     {/* --------------Company Image and Name------------------- */}
        <div className="yourImgAndName">
         <div className="yourImg">
-
-            <div className="yourImgEdit">
+            <img src="./images/profileImg.svg" alt="" />
+            {/* <div className="yourImgEdit">
             {
                 showYourDetails ? ""
                 : <img src="./images/Edit.svg" alt="" /> 
             }
-            </div>
+            </div> */}
             
         </div>
 
         <div className="yourProfileName">
             <h3>Rakesh Kumar</h3>
+            {
+                showYourDetails ? ""
+                :<p>Upload Image</p>
+            }
         </div>
        </div>
 

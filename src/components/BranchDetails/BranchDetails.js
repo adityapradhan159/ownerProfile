@@ -187,7 +187,10 @@ const [showAccordian,setshowAccordian] = useState(true)
             {/* ------------Branch Action Tools------------- */}
             <div className="branchActionTools">
               <div className="branchDetailsdropArrow" id='branchDetailsdropArrow'>
-                <img src="./images/branchDropDown.svg" alt="" />
+              {
+                showAccordian ? <img src="./images/branchDropDown.svg" alt="" />
+                : <img src="./images/accordianArrowDown.svg" alt="" />
+              }
               </div>
             </div>
            </div>
@@ -214,6 +217,8 @@ const [showAccordian,setshowAccordian] = useState(true)
                   <div className="addBranchHead">
                     <label htmlFor="">Region<span style={{color:"red"}}>*</span></label>
                     <input className='regionInp' type="text" placeholder='Region' onChange={e=>setAddingBranchRegion(e.target.value)}/>
+                    {/* <div className="regionOptions">  </div> */}
+                    
                   </div>
 
                   <div className="addBranchHeadStatus">

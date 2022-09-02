@@ -85,19 +85,24 @@ const handleCancelCompData = () => {
     {/* --------------Company Image and Name------------------- */}
        <div className="companyImgAndName">
         <div className="companyImg">
-
-            <div className="companyImgEdit">
+            <img src="./images/profileImg.svg" alt="" />
+            {/* <div className="companyImgEdit">
               {
                 showCompanyDetails ? ""
                 : <img src="./images/Edit.svg" alt="" /> 
               }
               
-            </div>
+            </div> */}
             
         </div>
 
         <div className="companyProfileName">
             <h3>ABC Truck Company</h3>
+              {
+                showCompanyDetails ? ""
+                :<p>Upload Image</p>
+              }
+            
         </div>
        </div>
 

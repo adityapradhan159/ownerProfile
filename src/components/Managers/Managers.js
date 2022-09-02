@@ -186,7 +186,10 @@ const [showaddAccordian,setshowAddAccordian] = useState(true)
             {/* ------------manager Action Tools------------- */}
             <div className="managerActionTools">
               <div className="managerDetailsdropArrow" id='managerDetailsdropArrow'>
-                <img src="./images/branchDropDown.svg" alt="" />
+              {
+                showaddAccordian ? <img src="./images/branchDropDown.svg" alt="" />
+                : <img src="./images/accordianArrowDown.svg" alt="" />
+              }
               </div>
             </div>
            </div>
@@ -323,7 +326,11 @@ const [showaddAccordian,setshowAddAccordian] = useState(true)
                 <div className="managerDocumentsAndIsAdmin">
                   <div className="addManagerDocument">
                     <label htmlFor="">Upload Document<span style={{color:"red"}}>*</span></label>
-                    <input type="file" onChange={(e) => setDocumemntSelected(e.target.files[0])}/>
+
+                    <label for='uploadDocumentBtn' className="uploadButton">
+                      <img src="./images/uploadButton.svg" alt="" />
+                    </label>
+                    <input id="uploadDocumentBtn" style={{display:"none"}} type="file" onChange={(e) => setDocumemntSelected(e.target.files[0])}/>
                   </div>
 
                     <div className="addIsAdmin">
