@@ -68,17 +68,17 @@ const toggleTab = () => {
             <div className="branchHeadContainer">
             <div className="isBranchStatusCheckBox">
                 <div className="isBranchStatusHeader">
-                  <label htmlFor="">Status<span style={{color:"red"}}>*</span></label>
+                  <label htmlFor="">Is Active<span style={{color:"red"}}>*</span></label>
                 </div>
                     <div className="BranchactiveCheckBox">
-                      <input type="checkbox" disabled={true}  defaultChecked={item.branchStatus == true ? checked : ""}/>
-                      <p>Active</p>
+                      <input type="checkbox" defaultChecked={item.branchStatus == true ? checked : ""}/>
+                      {/* <p>Active</p> */}
                     </div>
     
-                    <div className="BranchinactiveCheckBox">
+                    {/* <div className="BranchinactiveCheckBox">
                       <input type="checkbox" disabled={true}  defaultChecked={item.branchStatus == false ? checked : ""}/>
                       <p>Inactive</p>
-                    </div>
+                    </div> */}
                   </div>
             </div>
     
@@ -149,9 +149,9 @@ const toggleTab = () => {
     
     
         {/* ---------------Reset Password Link------------------- */}
-        <div className="branchResetPassword">
+        {/* <div className="branchResetPassword">
         <h3>Reset Password</h3>
-        </div>
+        </div> */}
     
         </div>
         </div>

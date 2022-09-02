@@ -182,9 +182,9 @@ const handleCancelCompData = () => {
 
 
     {/* ---------------Reset Password Link------------------- */}
-    <div className="companyResetPassword" style={showCompanyDetails ? {display:"flex"} : {display:"none"}}>
+    {/* <div className="companyResetPassword" style={showCompanyDetails ? {display:"flex"} : {display:"none"}}>
         <h3>Reset Password</h3>
-    </div>
+    </div> */}
 
     </div>
 

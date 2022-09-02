@@ -237,7 +237,7 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .addBranchHeadStatus{
-    width: 30%;
+    width: 212px;
 }
 
 .addBranchHead input{
@@ -252,7 +252,7 @@
 
 .isBranchStatusCheckBox{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 .isBranchStatusCheckBox input{
     width: 26px;

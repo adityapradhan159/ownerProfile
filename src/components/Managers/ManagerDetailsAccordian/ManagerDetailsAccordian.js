@@ -78,13 +78,13 @@ return (
                     <div className="isAdminCheckBox">
                       <div className="yesCheckBox">
                         <input type="checkbox" defaultChecked={ item.isAdmin == true ? checked : ""}/>
-                        <p>Yes</p>
+                        {/* <p>Yes</p> */}
                       </div>
     
-                      <div className="noCheckBox">
+                      {/* <div className="noCheckBox">
                         <input type="checkbox" defaultChecked={ item.isAdmin == false ? checked : ""}/>
                         <p>No</p>
-                      </div>
+                      </div> */}
                     </div>
                                       
                    </div>
@@ -94,19 +94,19 @@ return (
                   <div className="isStatusCheck">
     
                     <div className="isStatusHeader">
-                      <label  htmlFor="">Status</label>
+                      <label  htmlFor="">Is Active</label>
                     </div>
     
                     <div className="isStatusCheckBox">
                       <div className="activeCheckBox">
                         <input type="checkbox" defaultChecked={item.branchStatus == true ? checked : ""}/>
-                        <p>Active</p>
+                        {/* <p>Active</p> */}
                       </div>
     
-                      <div className="inactiveCheckBox">
+                      {/* <div className="inactiveCheckBox">
                         <input type="checkbox" defaultChecked={item.branchStatus == false ? checked : ""}/>
                         <p>Inactive</p>
-                      </div>
+                      </div> */}
                     </div>
                    
                    </div>

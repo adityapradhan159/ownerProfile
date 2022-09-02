@@ -224,17 +224,17 @@ const [showAccordian,setshowAccordian] = useState(true)
                   <div className="addBranchHeadStatus">
                   <div className="isBranchStatusCheckBox">
                     <div className="isBranchStatusHeader">
-                      <label htmlFor="">Status<span style={{color:"red"}}>*</span></label>
+                      <label htmlFor="">Is Active<span style={{color:"red"}}>*</span></label>
                     </div>
                         <div className="BranchactiveCheckBox">
                           <input type="checkbox" onChange={(e) => setStatusActive(e.target.checked)}/>
-                          <p>Active</p>
+                          {/* <p>Active</p> */}
                         </div>
 
-                        <div className="BranchinactiveCheckBox">
+                        {/* <div className="BranchinactiveCheckBox">
                           <input type="checkbox"/>
                           <p>Inactive</p>
-                        </div>
+                        </div> */}
                       </div>
                   </div>
                 </div>
@@ -249,7 +249,7 @@ const [showAccordian,setshowAccordian] = useState(true)
                 </div>
                 <div className="addHeadOfficePincode">
                   <div className="addHeadOffice">
-                    <label htmlFor="">Head Office Address<span style={{color:"red"}}>*</span></label>
+                    <label htmlFor="">Branch Address<span style={{color:"red"}}>*</span></label>
                     <input type="text" placeholder='Name' onChange={e=>setAddingBranchOffice(e.target.value)}/>
                   </div>
 

@@ -39,7 +39,7 @@ const [addingManagerEmail,setAddingManagerEmail] = useState("")
 
 const [IsAdminYes, setIsAdminYes] = useState(false)
 
-const[isStatusActive,setStatusActive] = useState("")
+const[isStatusActive,setStatusActive] = useState(false)
 
 const [idNumber,setIdNumber] = useState()
 
@@ -109,7 +109,7 @@ const handleManagerDetailsSave = () => {
  
   setManagerData( prev => [...prev,newBranchObject])
 } 
-
+console.log(managerData)
 
 const handleManagerDetailsCancel = () => {
   setISBtnDisabled(false)
@@ -232,13 +232,13 @@ const [showaddAccordian,setshowAddAccordian] = useState(true)
                       <div className="isAdminCheckBox">
                         <div className="yesCheckBox">
                           <input type="checkbox"  onChange={(e) => setIsAdminYes(e.target.checked)}/>
-                          <p>Yes</p>
+                          {/* <p>Yes</p> */}
                         </div>
 
-                        <div className="noCheckBox">
+                        {/* <div className="noCheckBox">
                           <input type="checkbox" />
                           <p>No</p>
-                        </div>
+                        </div> */}
                       </div>
                                         
                     </div>
@@ -248,19 +248,19 @@ const [showaddAccordian,setshowAddAccordian] = useState(true)
                     <div className="isStatusCheck">
 
                       <div className="isStatusHeader">
-                        <label  htmlFor="">Status<span style={{color:"red"}}>*</span></label>
+                        <label  htmlFor="">Is Active<span style={{color:"red"}}>*</span></label>
                       </div>
 
                       <div className="isStatusCheckBox">
                         <div className="activeCheckBox">
-                          <input type="checkbox" onChange={(e) => isStatusActive(e.target.checked)}/>
-                          <p>Active</p>
+                          <input type="checkbox" onChange={(e) => setStatusActive(e.target.checked)}/>
+                          {/* <p>Active</p> */}
                         </div>
 
-                        <div className="inactiveCheckBox">
+                        {/* <div className="inactiveCheckBox">
                           <input type="checkbox"/>
                           <p>Inactive</p>
-                        </div>
+                        </div> */}
                       </div>
                     
                     </div>
